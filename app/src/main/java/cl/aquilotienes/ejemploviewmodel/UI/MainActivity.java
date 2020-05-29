@@ -11,7 +11,7 @@ import cl.aquilotienes.ejemploviewmodel.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnAbrirViewModel, btnIngresarUsuario;
+    Button btnAbrirViewModel, btnIngresarUsuario, btnLiveData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnAbrirViewModel = (Button) findViewById(R.id.btn_viewmodel_activity);
         btnIngresarUsuario = (Button) findViewById(R.id.btn_ingresar_usuario);
-
+        btnLiveData = (Button) findViewById(R.id.btn_livedata);
 
     }
 
@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.btn_ingresar_usuario:
                 startActivity(new Intent(getApplicationContext(), ViewModelUsuarioActivity.class));
+                break;
+
+            case R.id.btn_livedata:
+                startActivity(new Intent(getApplicationContext(), LiveDataActivity.class));
                 break;
 
         }

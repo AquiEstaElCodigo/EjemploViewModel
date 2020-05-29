@@ -9,4 +9,7 @@
     <string name="view_model_sumar_activity">view model sumar activity</string>
     <string name="resultado">resultado</string>
     <string name="resultadovm">resultadovm</string>
+    <string name="resultado_lv">Resultado</string>
+    <string name="guardar">Guardar</string>
+    <string name="live_data">Live Data</string>
 </resources>

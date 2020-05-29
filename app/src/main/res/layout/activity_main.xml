@@ -7,29 +7,43 @@
     tools:context=".UI.MainActivity">
 
     <Button
-        android:id="@+id/btn_viewmodel_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:onClick="onClick"
-        android:text="@string/view_model_sumar_activity"
-        app:layout_constraintBottom_toTopOf="@+id/btn_ingresar_usuario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/btn_ingresar_usuario"
-        android:layout_width="220dp"
+        android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginBottom="16dp"
         android:onClick="onClick"
         android:text="@string/ingresar_usuario"
+        app:layout_constraintBottom_toTopOf="@+id/btn_livedata"
+        app:layout_constraintEnd_toEndOf="@+id/btn_livedata"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_livedata"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewmodel_activity"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/btn_viewmodel_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onClick"
+        android:text="@string/view_model_sumar_activity"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ingresar_usuario"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ingresar_usuario"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_ingresar_usuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_livedata"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/live_data"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_viewmodel_activity" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ingresar_usuario" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
